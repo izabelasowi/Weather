@@ -5,7 +5,7 @@ const key = 'GTG7xFf0MAyQa8SmmEY5ubOTBOyWu9b9';
 
 const getWeather = async (locid) => {
 
-    const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+    const base = 'https://dataservice.accuweather.com/currentconditions/v1/';
     const query = `${locid}?apikey=${key}`;
 
 
@@ -20,7 +20,7 @@ const getWeather = async (locid) => {
 
 const getCity = async (city) => {
 
-    const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+    const base = 'https://dataservice.accuweather.com/locations/v1/cities/search';
 
     const query = `?apikey=${key}&q=${city}`;
 
